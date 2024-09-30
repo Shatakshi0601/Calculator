@@ -42,3 +42,33 @@ button {
     transition: background-color 0.2s ease;
 }
 
+button:hover {
+    background-color: #555;
+}
+
+.operator {
+    background-color: green;
+    color: white;
+}
+
+.operator:hover {
+    background-color: darkgreen;
+}
+
+.equals {
+    background-color: blue;
+    color: white;
+}
+
+.equals:hover {
+    background-color: darkblue;
+}
+
+.clear {
+    background-color: red;
+    color: white; 
+}
+
+.clear:hover {
+    background-color: darkred;
+}
