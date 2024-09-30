@@ -9,6 +9,18 @@ body {
 }
 
 .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto repeat(5, 1fr);
+    gap: 10px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+#display {
     grid-column: span 4;
     background-color: black;
     color: white;
@@ -29,3 +41,5 @@ button {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+
+button:hover:
