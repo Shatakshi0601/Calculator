@@ -13,7 +13,7 @@ body {
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: auto repeat(5, 1fr);
     gap: 10px;
-    background-color: pink;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -32,7 +32,7 @@ body {
 }
 
 button {
-    background-color: darkmagenta;
+    background-color: #666;
     color: white;
     font-size: 1.5em;
     border: none;
@@ -42,3 +42,4 @@ button {
     transition: background-color 0.2s ease;
 }
 
+button:hover:
