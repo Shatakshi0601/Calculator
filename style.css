@@ -72,3 +72,7 @@ button:hover {
 .clear:hover {
     background-color: darkred;
 }
+
+button:nth-child(17) {
+    grid-column: span 2;
+}
