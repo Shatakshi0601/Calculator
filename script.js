@@ -69,9 +69,15 @@ clearButton.addEventListener("click", Erase);
 const operators = document.querySelectorAll(".operator");
 operators.forEach(button => {
     button.addEventListener("click", () => {
-    operator = button.textContent;    
-    operate(operator, a, b);
-    updateDisplay();        
+        if (operator && firstNumber !== null) {
+            secondNumber = parseFloat(displayValue);
+            const result = operate(operator, firstNumber, secondNumber);
+            displayValue = result.toString();
+            updateDisplay();
+        }
+
+        firstNumber = parseFloat(displayValue);
+        operator = button.textContent;        
     });
 });
 
