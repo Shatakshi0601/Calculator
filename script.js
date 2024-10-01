@@ -39,7 +39,7 @@ function updateDisplay() {
     display.textContent = displayValue;
 }
 
-function handleDigitPress(digit) {
+function appendNumber(digit) {
     if (displayValue === "0") {
         displayValue = digit;
     } else {
@@ -48,7 +48,8 @@ function handleDigitPress(digit) {
     updateDisplay();
 }
 
-operate(operator, a, b);
+
+
 
 
 
