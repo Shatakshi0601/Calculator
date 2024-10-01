@@ -81,8 +81,6 @@ operators.forEach(button => {
         updateDisplay();
     });
 });      
-    });
-});
 
 const equalsButton = document.querySelector(".equals");
 equalsButton.addEventListener("click", () => {
