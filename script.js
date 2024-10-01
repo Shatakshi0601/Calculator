@@ -19,16 +19,17 @@ let operator = null;
 let secondNumber = null;
 
 function operate(operator, a, b) {
-    if (operator === '+')
-        return add(a,b);
-    else if (operator === '-')
-        return sub(a,b);
-    else if (operator === '*')
-        return multi(a,b);
-    else if (operator === '/')
-        return divide(a,b);
-    else {
-        return null;
+    switch (operator) {
+        case '+':
+             return add(a, b);
+        case '-': 
+             return sub(a, b);
+        case '*':
+             return multi(a, b);
+        case '/':
+             return divide(a, b);
+             
+        default: return null;
     }
 }
 
