@@ -6,7 +6,7 @@ body {
     height: 100vh; 
     margin: 0;
     background-image: url('images/Calculator1.jpeg');
-    background-size: 100% 100%; 
+    background-size: cover; 
 }
 
 .calculator {
