@@ -81,6 +81,19 @@ operators.forEach(button => {
     });
 });
 
+const equalsButton = document.querySelector(".equals");
+equalsButton.addEventListener("click", () => {
+    if (operator && firstNumber !== null) {
+        secondNumber = parseFloat(displayValue);
+        displayValue = operate(operator, firstNumber, secondNumber).toString();
+        firstNumber = null;
+        operator = null;
+        updateDisplay();
+    }
+});
+
+
+
 
 
 
