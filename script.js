@@ -48,20 +48,29 @@ function appendNumber(digit) {
     updateDisplay();
 }
 
-function handleClear() {
-    displayValue = "0";
-    firstNumber = null;
-    secondNumber = null;
-    currentOperator = null;
-    updateDisplay();
-}
-
 const digits = document.querySelectorAll(".digit");
 digits.forEach(button => {
     button.addEventListener("click", () => {
         appendNumber(button.textContent);
     });
 });
+
+function Erase() {
+    displayValue = "0";
+    firstNumber = null;
+    secondNumber = null;
+    operator = null;
+    updateDisplay();
+}
+
+const clearButton= document.querySelector(".clear");
+clearButton.forEach(button => {
+    button.addEventListener("click", () => {
+        Erase();
+    });
+});
+
+
 
 
 
