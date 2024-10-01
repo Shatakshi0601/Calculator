@@ -28,8 +28,7 @@ function operate(operator, a, b) {
     else if (operator === '/')
         return divide(a,b);
     else {
-        alert("Not defined")
+        return null;
     }
 }
 
-operate();
