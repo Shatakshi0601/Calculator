@@ -64,11 +64,7 @@ function Erase() {
 }
 
 const clearButton= document.querySelector(".clear");
-clearButton.forEach(button => {
-    button.addEventListener("click", () => {
-        Erase();
-    });
-});
+clearButton.addEventListener("click", Erase);
 
 
 
