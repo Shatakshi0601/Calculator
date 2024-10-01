@@ -28,7 +28,7 @@ function operate(operator, a, b) {
              return multi(a, b);
         case '/':
              return divide(a, b);
-             
+
         default: return null;
     }
 }
@@ -70,15 +70,17 @@ clearButton.addEventListener("click", Erase);
 const operators = document.querySelectorAll(".operator");
 operators.forEach(button => {
     button.addEventListener("click", () => {
-        if (operator && firstNumber !== null) {
+        if (firstNumber === null) {
+            firstNumber = parseFloat(displayValue);
+        } else {
             secondNumber = parseFloat(displayValue);
-            const result = operate(operator, firstNumber, secondNumber);
-            displayValue = result.toString();
-            updateDisplay();
+            firstNumber = operate(operator, firstNumber, secondNumber);
         }
-
-        firstNumber = parseFloat(displayValue);
-        operator = button.textContent;        
+        operator = button.textContent;
+        displayValue = "0";
+        updateDisplay();
+    });
+});      
     });
 });
 
