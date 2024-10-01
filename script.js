@@ -48,7 +48,20 @@ function appendNumber(digit) {
     updateDisplay();
 }
 
+function handleClear() {
+    displayValue = "0";
+    firstNumber = null;
+    secondNumber = null;
+    currentOperator = null;
+    updateDisplay();
+}
 
+const digits = document.querySelectorAll(".digit");
+digits.forEach(button => {
+    button.addEventListener("click", () => {
+        appendNumber(button.textContent);
+    });
+});
 
 
 
