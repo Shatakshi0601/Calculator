@@ -13,8 +13,3 @@ function multi(a,b) {
 function divide(a,b) {
     return a/b;
 }
-
-console.log(add);
-console.log(sub);
-console.log(multi);
-console.log(divide);
