@@ -32,3 +32,14 @@ function operate(operator, a, b) {
     }
 }
 
+let displayValue = "0";
+
+function updateDisplay() {
+    const display = document.querySelector("#display");
+    display.textContent = displayValue;
+}
+
+
+
+
+
