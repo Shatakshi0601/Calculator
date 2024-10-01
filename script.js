@@ -39,6 +39,17 @@ function updateDisplay() {
     display.textContent = displayValue;
 }
 
+function handleDigitPress(digit) {
+    if (displayValue === "0") {
+        displayValue = digit;
+    } else {
+        displayValue += digit;
+    }
+    updateDisplay();
+}
+
+
+
 
 
 
