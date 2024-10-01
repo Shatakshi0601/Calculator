@@ -48,7 +48,7 @@ function handleDigitPress(digit) {
     updateDisplay();
 }
 
-
+operate(operator, a, b);
 
 
 
